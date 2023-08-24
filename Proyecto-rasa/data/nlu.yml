@@ -1,0 +1,525 @@
+version: "2.0"
+
+nlu:
+- intent: saludar
+  examples: |
+    - hola
+    - buenos dias
+    - ey
+    - hola, que tal
+    - buen dia
+    - buenas tardes
+    - buenas
+
+- intent: despedirse
+  examples: |
+    - adios
+    - hasta luego
+    - hasta pronto
+    - ciao
+    - que tengas un buen dia
+    - nos vemos mas tarde
+    - nos vemos
+
+- intent: afirmar
+  examples: |
+    - si
+    - por supuesto
+    - claro que si
+    - suena bien
+    - me parece bien
+    - me parece correcto
+    - genial
+    - vale
+    - guay
+    - okey
+    - ok
+    - correcto
+    - mucho
+
+
+- intent: negar
+  examples: |
+    - no
+    - nunca
+    - no creo
+    - no me gusta
+    - mejor no
+    - por mi no
+    - preriero que no
+    - no quiero
+
+- intent: estado_feliz
+  examples: |
+    - perfecto
+    - bien
+    - genial
+    - increible
+    - maravilloso
+    - me siento genial
+    - me siento muy bien
+    - muy bien
+    - me siento bien
+    - guay
+    
+
+- intent: estado_infeliz
+  examples: |
+    - mi dia fue horrible
+    - estoy triste
+    - no me siento bien
+    - todo mal
+    - no esoy contento
+    - no estoy contenta
+    - no estoy feliz
+    - no muy bien en verdad
+    - mal
+    - regular
+    - triste
+    
+- intent: estado_cansado
+  examples: |
+    - estoy cansado
+    - no me apetece seguir
+    - ya no quiero mas
+    - me aburro
+    - me duelen los pies
+    - podemos parar
+    - no quiero seguir
+
+- intent: bot_challenge
+  examples: |
+    - eres un bot bot?
+    - eres humano?
+    - estoy hablando con un bot?
+    - estoy hablando con una maquina
+    - estoy hablando con un humano?
+
+- intent: modo_curiosidad
+  examples: |
+       - vaya no lo sabia
+       - wow
+       - que guay
+       - que mas sabes?
+       - como hacen eso?
+       - sabes por que?
+
+ 
+- intent: elige_rutaChuLin
+  examples: |
+    - prefiero que elija Chulin la ruta
+    - Chulin elige la ruta
+    - Puedes elegir la ruta 
+    - Quiero que elijas una ruta por mi 
+    - prefiero que elija Chulin
+    - CHULIN ELIGE.
+    - chu-lin elige
+ 
+- intent: elige_rutaUsuario
+  examples: |
+    - Yo elijo la ruta
+    - YO ELIJO
+    - yo elijo
+    - quiero elegir la ruta
+    - quiero elegir la ruta yo mismo 
+
+- intent: elige_rutaOceania
+  examples: |
+   -  Elijo la ruta Oceania
+   -  Ruta Oceania
+   -  Quiero la ruta oceanica
+   -  Quiero ver los animales de Oceania
+   -  Ruta Oceanica
+
+- intent: elige_rutaAmericana
+  examples: |
+   -  Elijo la ruta Americana
+   -  Ruta Americana
+   -  Quiero la ruta americana
+   -  Quiero ver los animales de Americana
+   -  Elijo la ruta America
+   -  Ruta America
+   -  Quiero la ruta america
+   -  Quiero ver los animales de America
+
+- intent: elige_rutaAsia
+  examples: |
+   -  Elijo la ruta Asia
+   -  Ruta Asia
+   -  Quiero la ruta asiatica
+   -  Quiero ver los animales de Asia  
+   -  Ruta asiatica
+
+- intent: elige_rutaAfrica
+  examples: |
+   -  Elijo la ruta Africa
+   -  Ruta Africa
+   -  Quiero la ruta africana
+   -  Quiero ver los animales de Africa
+   -  ruta africana
+
+- intent: elige_rutaEuropa
+  examples: |
+   -  Elijo la ruta Europa
+   -  Ruta Europa
+   -  Quiero la ruta europa
+   -  Quiero ver los animales de Europa
+   -  ruta europea
+
+- intent: presentacion
+  examples: |
+    - yo soy Natalia
+    - mi nombre es Carlos
+    - me llaman Maria
+    - puedes llamarme Jorge
+    - Pepe
+    - Lucia 
+    - Me llamo Patricia
+    - Martin
+    - Hugo
+    - Mateo
+    - Lucia
+    - Marta
+    - Alejandra
+    - Julia
+    - Manuela
+    - Diego
+    - Javier
+    - Jesus
+    - Maria Angeles
+    - Nines
+    - Manuel 
+    - Paula
+    - Lidia
+    - Cecilia   
+    - David
+    - Pablo
+    - Luis
+    - Hugo
+    - Martina
+    - Julia
+    - Ana 
+    - Ane 
+    - Amira 
+    - Sofia
+
+
+- intent: edad
+  examples: | 
+    - tres
+    - cuatro
+    - cinco
+    - seis
+    - siete
+    - ocho
+    - nueve
+    - diez
+    - once
+    - doce
+    - trece
+    - cartorce
+    - quince
+    - dieciseis
+    - diecisiete
+    - dieciocho
+    - diecinueve  
+    - veinte
+    - veintiuno
+    - veintidos
+    - veintitres
+    - veinticuatro
+    - yo tengo cinco anos
+    - tengo cinco anicos
+    - solo tengo tres anos
+
+# ELECION ANIMAL FAVORITO
+- intent: animal_fav_koala
+  examples: |
+    - koala
+    - el koala
+    - KOALA
+    - los koalas
+
+- intent: animal_fav_mapache
+  examples: |
+    - mapache
+    - los mapaches
+    - EL MAPACHE   
+
+- intent: animal_fav_lince
+  examples: |
+    - lince
+    - el lince
+    - LOS LINCES
+ 
+
+- intent: continente_fav
+  examples: |
+    - Europa
+    - Asia
+    - Oceania
+    - America
+    - La Antartida
+    - Africa
+    - mi continente favorito es Europa
+    - me gusta asia
+    - oceania
+    - asia
+    - europa
+    - america
+
+- intent: estacion_fav
+  examples: |
+    - Verano
+    - Otoño
+    - Primavera
+    - Invierno
+    - El verano
+    - El otoño
+    - La primavera
+    - El invierno
+    - mi favorito es el otoño
+    - me gusta la primavera
+    - prefiero el invierno
+   
+# ELECION HABITAT FAVORITO
+- intent: habitat_fav_desierto
+  examples: |
+    - el desierto
+    - DESIERTO
+
+- intent: habitat_fav_montaña
+  examples: |
+    - la montaña
+    - montaña
+
+- intent: habitat_fav_bosque
+  examples: |
+    - el bosque
+    - BOSQUE
+
+# ELECION PAIS FAVORITO
+- intent: pais_AUS
+  examples: |
+    - Australia
+    - australia
+    - el pais es australia
+    - se llama australia
+    - si, el pais es australia
+
+- intent: pais_FRA
+  examples: |
+    - Francia
+    - francia
+    - el pais es francia
+    - prefiero francia
+
+- intent: pais_PER
+  examples: |
+    - Perú
+    - perú
+    - me gusta mas Perú
+    - prefiero Perú   
+
+- intent: continente_OCE
+  examples: |
+    - Oceania
+    - se llama oceania
+    - oceania
+
+- intent: animal_AUS
+  examples: |
+    - wallaby
+    - wallaby de roca
+    - emu
+    - nandu
+    - koala
+    - casuarios
+    - casuario
+    - canguro 
+    - el wallaby
+    - el wallaby de roca
+    - el emu
+    - el nandu
+    - el koala
+    - los casuarios
+    - el casuario
+    - el canguro     
+   
+
+- intent: from
+  examples: |
+    - el cole
+    - el colegio
+    - en la tele
+    - TV
+    - mama y papa
+    - mis amigos
+    - un libro
+    - en los libros
+
+- intent: siguienteanimal_RO_1
+  examples: |
+    - siguiente
+    - siguiente animal
+
+
+- intent: keepRO_1
+  examples: |
+    - quiero conocer el otro animal que no sea el koala
+    - conocer el animal despues del koala
+    - SIGUIENTE KOALA
+
+- intent: keepRO_2
+  examples: |
+    - quiero conocer el siguiente animal despues del casuario
+    - conocer el animal despues del casuario
+    - SIGUIENTE CASUARIO
+    
+- intent: keepRO_3
+  examples: |
+    - quiero conocer el siguiente animal despues del wallaby
+    - conocer el animal despues del wallaby
+    - SIGUIENTE WALLABY
+
+- intent: keepRAM_1
+  examples: |
+    - quiero conocer el siguiente animal despues del mono
+    - conocer el animal despues del mono capuchino
+    - SIGUIENTE MONO
+
+- intent: keepRAM_2
+  examples: |
+    - quiero conocer el siguiente animal despues del Bisonte
+    - conocer el animal despues del bisonte
+    - SIGUIENTE BISONTE
+
+- intent: keepRAM_3
+  examples: |
+    - quiero conocer el siguiente animal despues del Nutria
+    - conocer el animal despues de la nutria
+    - SIGUIENTE NUTRIA
+
+- intent: keepRAM_4
+  examples: |
+    - quiero conocer el siguiente animal despues del guanaco
+    - conocer el animal despues de la Guanaco
+    - SIGUIENTE GUANACO    
+
+- intent: keepRAM_5
+  examples: |
+    - quiero conocer el siguiente animal despues del mara
+    - conocer el animal despues de la mara
+    - SIGUIENTE MARA
+
+- intent: keepRAM_6
+  examples: |
+    - quiero conocer el siguiente animal despues del tapir
+    - conocer el animal despues de la tapir
+    - SIGUIENTE TAPIR  
+
+- intent: keepRAM_7
+  examples: |
+    - quiero conocer el siguiente animal despues del ÑANDU
+    - conocer el animal despues de la ÑANDU
+    - SIGUIENTE ÑANDU
+
+- intent: keepRAM_8
+  examples: |
+    - quiero conocer el siguiente animal despues del hormiguero
+    - conocer el animal despues de la hormiguero
+    - SIGUIENTE HORMIGUERO
+
+- intent: keepRAM_9
+  examples: |
+    - quiero conocer el siguiente animal despues del mapache
+    - conocer el animal despues de la mapache
+    - SIGUIENTE MAPACHE
+
+- intent: keepREU_1
+  examples: |
+    - quiero conocer el siguiente animal despues del Oso Pardo
+    - conocer el animal despues del oso pardo
+    - SIGUIENTE OSO
+
+- intent: keepREU_2
+  examples: |
+    - quiero conocer el siguiente animal despues del LOBO
+    - conocer el animal despues del lobo
+    - SIGUIENTE LOBO
+
+- intent: keepREU_3
+  examples: |
+    - quiero conocer el siguiente animal despues del LINCE
+    - conocer el animal despues del lince
+    - SIGUIENTE LINCE
+
+- intent: keepREU_4
+  examples: |
+    - quiero conocer el siguiente animal despues del buho
+    - conocer el animal despues de la buho
+    - SIGUIENTE BUHO
+
+- intent: keepREU_5
+  examples: |
+    - quiero conocer el siguiente animal despues del aguila
+    - conocer el animal despues de la aguila
+    - SIGUIENTE AGUILA
+
+- intent: keepREU_6
+  examples: |
+    - quiero conocer el siguiente animal despues del muflon
+    - conocer el animal despues del muflon
+    - SIGUIENTE MUFLON
+
+- intent: keepREU_7
+  examples: |
+    - quiero conocer el siguiente animal despues de la cabra
+    - conocer el animal despues de la cabra
+    - SIGUIENTE CABRA
+
+- intent: keepREU_8
+  examples: |
+    - quiero conocer el siguiente animal despues del jabali
+    - conocer el animal despues de la jabali
+    - SIGUIENTE JABALI
+
+- intent: keepREU_9
+  examples: |
+    - quiero conocer el siguiente animal despues del GAMO
+    - conocer el animal despues del gamo
+    - SIGUIENTE GAMO
+
+- intent: keepREU_10
+  examples: |
+    - quiero conocer el siguiente animal despues del reno
+    - conocer el animal despues del reno
+    - SIGUIENTE RENO
+
+
+
+
+- intent: game_Respuesta_A
+  examples: |
+    - A
+    - La respuesta es A
+    - La correcta es A
+    - La respuesta correcta es A
+    - La letra A
+
+- intent: game_Respuesta_B
+  examples: |
+    - B
+    - La respuesta es B
+    - La correcta es B
+    - La respuesta correcta es B
+    - La letra B
+
+- intent: game_Respuesta_C
+  examples: |
+    - C
+    - La respuesta es C
+    - La correcta es C
+    - La respuesta correcta es C
+    - La letra C
+

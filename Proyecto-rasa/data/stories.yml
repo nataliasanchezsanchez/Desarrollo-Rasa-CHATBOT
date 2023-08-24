@@ -1,0 +1,1662 @@
+version: "2.0"
+
+stories:
+
+#### test INICIO DE LA CONVERSACION
+
+- story: INICIO path 1
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - intent: estado_infeliz
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_presentacion
+  - action: utter_explicacion
+  - checkpoint: check_eligetiporuta
+
+
+- story: INICIO path 2
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - intent: estado_feliz
+  - action: utter_feliz
+  - action: utter_presentacion
+  - action: utter_explicacion
+  - checkpoint: check_eligetiporuta
+
+####test conocer al usuario
+  # CHU-LIN elije RUTA OCEANIA
+- story: Presenctacion path 1 chulin elije ROceania
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_koala
+  - action: utter_metoo_koala
+  - action: utter_habitat_fav
+  - intent: habitat_fav_desierto
+  - action: utter_pais_fav
+  - intent: pais_AUS
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaOceania
+
+- story: Presenctacion path 2 chulin elije ROceania
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_koala
+  - action: utter_metoo_koala
+  - action: utter_habitat_fav
+  - intent: habitat_fav_desierto
+  - action: utter_pais_fav
+  - intent: pais_FRA
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaOceania  
+
+- story: Presenctacion path 3 chulin elije ROceania
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_koala
+  - action: utter_metoo_koala
+  - action: utter_habitat_fav
+  - intent: habitat_fav_desierto
+  - action: utter_pais_fav
+  - intent: pais_PER
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaOceania
+
+- story: Presenctacion path 4 chulin elije ROceania
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_koala
+  - action: utter_metoo_koala
+  - action: utter_habitat_fav
+  - intent: habitat_fav_bosque
+  - action: utter_pais_fav
+  - intent: pais_AUS
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaOceania
+
+- story: Presenctacion path 5 chulin elije ROceania
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_koala
+  - action: utter_metoo_koala
+  - action: utter_habitat_fav
+  - intent: habitat_fav_montaña
+  - action: utter_pais_fav
+  - intent: pais_AUS
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaOceania
+
+- story: Presenctacion path 6 chulin elije ROceania
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_lince
+  - action: utter_metoo_lince
+  - action: utter_habitat_fav
+  - intent: habitat_fav_desierto
+  - action: utter_pais_fav
+  - intent: pais_AUS
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaOceania
+
+- story: Presenctacion path 7 chulin elije ROceania
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_mapache
+  - action: utter_metoo_mapache
+  - action: utter_habitat_fav
+  - intent: habitat_fav_desierto
+  - action: utter_pais_fav
+  - intent: pais_AUS
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaOceania  
+
+ # CHU-LIN elije RUTA AMERICA
+- story: Presenctacion path 1 chulin elije RAmerica
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_mapache
+  - action: utter_metoo_mapache
+  - action: utter_habitat_fav
+  - intent: habitat_fav_bosque
+  - action: utter_pais_fav
+  - intent: pais_PER
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaAmericana
+
+- story: Presenctacion path 2 chulin elije RAmerica
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_mapache
+  - action: utter_metoo_mapache
+  - action: utter_habitat_fav
+  - intent: habitat_fav_bosque
+  - action: utter_pais_fav
+  - intent: pais_AUS
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaAmericana
+
+- story: Presenctacion path 3 chulin elije RAmerica
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_mapache
+  - action: utter_metoo_mapache
+  - action: utter_habitat_fav
+  - intent: habitat_fav_bosque
+  - action: utter_pais_fav
+  - intent: pais_FRA
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaAmericana  
+
+- story: Presenctacion path 4 chulin elije RAmerica
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_mapache
+  - action: utter_metoo_mapache
+  - action: utter_habitat_fav
+  - intent: habitat_fav_desierto
+  - action: utter_pais_fav
+  - intent: pais_PER
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaAmericana  
+
+- story: Presenctacion path 5 chulin elije RAmerica
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_mapache
+  - action: utter_metoo_mapache
+  - action: utter_habitat_fav
+  - intent: habitat_fav_montaña
+  - action: utter_pais_fav
+  - intent: pais_PER
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaAmericana
+
+- story: Presenctacion path 6 chulin elije RAmerica
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_koala
+  - action: utter_metoo_koala
+  - action: utter_habitat_fav
+  - intent: habitat_fav_bosque
+  - action: utter_pais_fav
+  - intent: pais_PER
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaAmericana
+
+- story: Presenctacion path 7 chulin elije RAmerica
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_lince
+  - action: utter_metoo_lince
+  - action: utter_habitat_fav
+  - intent: habitat_fav_bosque
+  - action: utter_pais_fav
+  - intent: pais_PER
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaAmericana
+
+ # CHU-LIN elije RUTA EUROPA
+
+- story: Presenctacion path 1 chulin elije REuropa
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_lince
+  - action: utter_metoo_lince
+  - action: utter_habitat_fav
+  - intent: habitat_fav_montaña
+  - action: utter_pais_fav
+  - intent: pais_FRA
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaEuropea
+
+- story: Presenctacion path 2 chulin elije REuropa
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_lince
+  - action: utter_metoo_lince
+  - action: utter_habitat_fav
+  - intent: habitat_fav_montaña
+  - action: utter_pais_fav
+  - intent: pais_PER
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaEuropea
+
+- story: Presenctacion path 3 chulin elije REuropa
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_lince
+  - action: utter_metoo_lince
+  - action: utter_habitat_fav
+  - intent: habitat_fav_montaña
+  - action: utter_pais_fav
+  - intent: pais_AUS
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaEuropea
+
+- story: Presenctacion path 4 chulin elije REuropa
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_lince
+  - action: utter_metoo_lince
+  - action: utter_habitat_fav
+  - intent: habitat_fav_bosque
+  - action: utter_pais_fav
+  - intent: pais_FRA
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaEuropea
+
+- story: Presenctacion path 5 chulin elije REuropa
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_lince
+  - action: utter_metoo_lince
+  - action: utter_habitat_fav
+  - intent: habitat_fav_desierto
+  - action: utter_pais_fav
+  - intent: pais_FRA
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaEuropea
+
+- story: Presenctacion path 6 chulin elije REuropa
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_mapache
+  - action: utter_metoo_mapache
+  - action: utter_habitat_fav
+  - intent: habitat_fav_montaña
+  - action: utter_pais_fav
+  - intent: pais_FRA
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaEuropea
+
+- story: Presenctacion path 7 chulin elije REuropa
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaChuLin
+  - action: utter_meet
+  - intent: presentacion
+  - action: utter_edad
+  - intent: edad
+  - action: utter_mayor
+  - action: utter_animal_fav
+  - intent: animal_fav_koala
+  - action: utter_metoo_koala
+  - action: utter_habitat_fav
+  - intent: habitat_fav_montaña
+  - action: utter_pais_fav
+  - intent: pais_FRA
+  - action: utter_estacion_fav
+  - intent: estacion_fav
+  - action:  utter_choose_rute
+  - checkpoint: check_RutaEuropea
+####test elecion usuario
+
+
+- story: Elecion Usuario path Oceania
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaUsuario
+  - action: utter_explain_rutes
+  - intent: elige_rutaOceania
+  - action: utter_confirmRutaOceania
+  - intent: afirmar
+  - checkpoint: check_RutaOceania
+
+
+- story: Elecion Usuario path America
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaUsuario
+  - action: utter_explain_rutes
+  - intent: elige_rutaAmericana
+  - action: utter_confirmRutaAmerica
+  - intent: afirmar
+  - checkpoint: check_RutaAmericana
+
+#- story: Elecion Usuario path Asia
+#  steps:
+#  - checkpoint: check_eligetiporuta
+#  - intent: elige_rutaUsuario
+#  - action: utter_explain_rutes
+#  - intent: elige_rutaAsia
+#  - action: utter_confirmRutaAsia
+#  - intent: afirmar
+#  - checkpoint: check_RutaAsiatica
+
+- story: Elecion Usuario path Europa
+  steps:
+  - checkpoint: check_eligetiporuta
+  - intent: elige_rutaUsuario
+  - action: utter_explain_rutes
+  - intent: elige_rutaEuropa
+  - action: utter_confirmRutaEuropa
+  - intent: afirmar
+  - checkpoint: check_RutaEuropea
+
+#- story: Elecion Usuario path Africa
+#  steps:
+#  - checkpoint: check_eligetiporuta
+#  - intent: elige_rutaUsuario
+#  - action: utter_explain_rutes
+#  - intent: elige_rutaAfrica
+#  - action: utter_confirmRutaAfrica
+#  - intent: afirmar
+#  - checkpoint: check_RutaAfricana
+
+
+##- story: cansado path 1
+ ## steps:
+ ## - intent: estado_cansado
+ ## - action: utter_redirigir
+ ## - intent: afirmar
+ ## - action: utter_choose_rute2
+
+##- story: cansado path 2
+ ## steps:
+ ## - intent: estado_cansado
+ ## - action: utter_redirigir
+ ## - intent: negar
+ ## - action: utter_helado
+ ## - intent: afirmar
+ ## - action: utter_feliz
+
+####test conversacional ruta oceanica
+
+- story: rutaAUSTRALIA path 1
+  steps:
+  - checkpoint: check_RutaOceania
+  - action: utter_inicio_rutaAUS
+  - action: utter_conoces_pais
+  - intent: pais_AUS
+  - action: utter_info_koalas
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_koalas
+  - action: utter_caracteristicasfisicas_koalas
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_koalas
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_koalas
+  - action: utter_keepRO_1
+  - intent: keepRO_1
+  - action: utter_info_casuario
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_casuario
+  - action: utter_caracteristicasfisicas_casuario
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_casuario
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_casuario
+  - action: utter_keepRO_2
+  - intent: keepRO_2
+  - action: utter_info_wallaby
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_wallaby
+  - action: utter_caracteristicasfisicas_wallaby
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_wallaby
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_wallaby
+  - action: utter_keepRO_3
+  - intent: keepRO_3
+  - action: utter_info_emu
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_emu
+  - action: utter_caracteristicasfisicas_emu
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_emu
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_emu
+  - action: utter_fin_RutaOceania
+  - checkpoint: check_FINRutaOceania
+
+
+
+- story: rutaAUSTRALIA path 2
+  steps:
+  - checkpoint: check_RutaOceania
+  - action: utter_inicio_rutaAUS
+  - action: utter_conoces_pais
+  - intent: pais_AUS
+  - action: utter_info_koalas
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_koalas
+  - action: utter_caracteristicasfisicas_koalas
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRO_1
+  - intent: keepRO_1
+  - action: utter_info_casuario
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_casuario
+  - action: utter_caracteristicasfisicas_casuario
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_casuario
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_casuario
+  - action: utter_keepRO_2
+  - intent: keepRO_2
+  - action: utter_info_wallaby
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_wallaby
+  - action: utter_caracteristicasfisicas_wallaby
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRO_3
+  - intent: keepRO_3
+  - action: utter_info_emu
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_emu
+  - action: utter_caracteristicasfisicas_emu
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_emu
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_emu
+  - action: utter_fin_RutaOceania
+  - checkpoint: check_FINRutaOceania 
+
+
+
+- story: rutaAUSTRALIA path 3
+  steps:
+  - checkpoint: check_RutaOceania
+  - action: utter_inicio_rutaAUS
+  - action: utter_conoces_pais
+  - intent: pais_AUS
+  - action: utter_info_koalas
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_koalas
+  - action: utter_caracteristicasfisicas_koalas
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRO_1
+  - intent: keepRO_1
+  - action: utter_info_casuario
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_casuario
+  - action: utter_caracteristicasfisicas_casuario
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRO_2
+  - intent: keepRO_2
+  - action: utter_info_wallaby
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_wallaby
+  - action: utter_caracteristicasfisicas_wallaby
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRO_3
+  - intent: keepRO_3
+  - action: utter_info_emu
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_emu
+  - action: utter_caracteristicasfisicas_emu
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_fin_RutaOceania
+  - checkpoint: check_FINRutaOceania 
+
+####test conversacional ruta americana
+- story: rutaAMERICANA path 1
+  steps:
+  - checkpoint: check_RutaAmericana
+  - action: utter_inicio_rutaAME
+  - action: utter_info_mono
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mono
+  - action: utter_caracteristicasfisicas_mono
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_mono
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_mono
+  - action: utter_keepRAM_1
+  - intent: keepRAM_1
+  - action: utter_info_bisonte
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_bisonte
+  - action: utter_caracteristicasfisicas_bisonte
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_bisonte
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_bisonte
+  - action: utter_keepRAM_2
+  - intent: keepRAM_2
+  - action: utter_info_nutria
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_nutria
+  - action: utter_caracteristicasfisicas_nutria
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_nutria
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_nutria
+  - action: utter_keepRAM_3
+  - intent: keepRAM_3
+  - action: utter_info_guanaco
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_guanaco
+  - action: utter_caracteristicasfisicas_guanaco
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_guanaco
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_guanaco
+  - action: utter_keepRAM_4
+  - intent: keepRAM_4
+  - action: utter_info_mara
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mara
+  - action: utter_caracteristicasfisicas_mara
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_mara
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_mara
+  - action: utter_keepRAM_5
+  - intent: keepRAM_5
+  - action: utter_info_tapir
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_tapir
+  - action: utter_caracteristicasfisicas_tapir
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_tapir
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_tapir
+  - action: utter_keepRAM_6
+  - intent: keepRAM_6
+  - action: utter_info_ñandu
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_ñandu
+  - action: utter_caracteristicasfisicas_ñandu
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_ñandu
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_ñandu
+  - action: utter_keepRAM_7
+  - intent: keepRAM_7
+  - action: utter_info_hormiguero
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_hormiguero
+  - action: utter_caracteristicasfisicas_hormiguero
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_hormiguero
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_hormiguero
+  - action: utter_keepRAM_8
+  - intent: keepRAM_8
+  - action: utter_info_mapache
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mapache
+  - action: utter_caracteristicasfisicas_mapache
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_mapache
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_mapache
+  - action: utter_keepRAM_9
+  - intent: keepRAM_9
+  - action: utter_info_flamenco
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_flamenco
+  - action: utter_caracteristicasfisicas_flamenco
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_flamenco
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_flamenco
+  - action: utter_fin_RutaAmericana
+  - checkpoint: check_FINRutaAmericana
+
+
+- story: rutaAMERICANA path 2
+  steps:
+  - checkpoint: check_RutaAmericana
+  - action: utter_inicio_rutaAME
+  - action: utter_info_mono
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mono
+  - action: utter_caracteristicasfisicas_mono
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_1
+  - intent: keepRAM_1
+  - action: utter_info_bisonte
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_bisonte
+  - action: utter_caracteristicasfisicas_bisonte
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_bisonte
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_bisonte
+  - action: utter_keepRAM_2
+  - intent: keepRAM_2
+  - action: utter_info_nutria
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_nutria
+  - action: utter_caracteristicasfisicas_nutria
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_3
+  - intent: keepRAM_3
+  - action: utter_info_guanaco
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_guanaco
+  - action: utter_caracteristicasfisicas_guanaco
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_guanaco
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_guanaco
+  - action: utter_keepRAM_4
+  - intent: keepRAM_4
+  - action: utter_info_mara
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mara
+  - action: utter_caracteristicasfisicas_mara
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_5
+  - intent: keepRAM_5
+  - action: utter_info_tapir
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_tapir
+  - action: utter_caracteristicasfisicas_tapir
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_tapir
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_tapir
+  - action: utter_keepRAM_6
+  - intent: keepRAM_6
+  - action: utter_info_ñandu
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_ñandu
+  - action: utter_caracteristicasfisicas_ñandu
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_7
+  - intent: keepRAM_7
+  - action: utter_info_hormiguero
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_hormiguero
+  - action: utter_caracteristicasfisicas_hormiguero
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_hormiguero
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_hormiguero
+  - action: utter_keepRAM_8
+  - intent: keepRAM_8
+  - action: utter_info_mapache
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mapache
+  - action: utter_caracteristicasfisicas_mapache
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_9
+  - intent: keepRAM_9
+  - action: utter_info_flamenco
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_flamenco
+  - action: utter_caracteristicasfisicas_flamenco
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_flamenco
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_flamenco
+  - action: utter_fin_RutaAmericana
+  - checkpoint: check_FINRutaAmericana
+
+
+- story: rutaAMERICANA path 3
+  steps:
+  - checkpoint: check_RutaAmericana
+  - action: utter_inicio_rutaAME
+  - action: utter_info_mono
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mono
+  - action: utter_caracteristicasfisicas_mono
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_1
+  - intent: keepRAM_1
+  - action: utter_info_bisonte
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_bisonte
+  - action: utter_caracteristicasfisicas_bisonte
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_2
+  - intent: keepRAM_2
+  - action: utter_info_nutria
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_nutria
+  - action: utter_caracteristicasfisicas_nutria
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_3
+  - intent: keepRAM_3
+  - action: utter_info_guanaco
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_guanaco
+  - action: utter_caracteristicasfisicas_guanaco
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_4
+  - intent: keepRAM_4
+  - action: utter_info_mara
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mara
+  - action: utter_caracteristicasfisicas_mara
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_5
+  - intent: keepRAM_5
+  - action: utter_info_tapir
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_tapir
+  - action: utter_caracteristicasfisicas_tapir
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_6
+  - intent: keepRAM_6
+  - action: utter_info_ñandu
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_ñandu
+  - action: utter_caracteristicasfisicas_ñandu
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_7
+  - intent: keepRAM_7
+  - action: utter_info_hormiguero
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_hormiguero
+  - action: utter_caracteristicasfisicas_hormiguero
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_8
+  - intent: keepRAM_8
+  - action: utter_info_mapache
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_mapache
+  - action: utter_caracteristicasfisicas_mapache
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepRAM_9
+  - intent: keepRAM_9
+  - action: utter_info_flamenco
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_flamenco
+  - action: utter_caracteristicasfisicas_flamenco
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_fin_RutaAmericana
+  - checkpoint: check_FINRutaAmericana
+
+####test conversacional ruta europea
+
+- story: rutaEUROPA path 1
+  steps:
+  - checkpoint: check_RutaEuropea
+  - action: utter_inicio_rutaEU
+  - action: utter_info_oso
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_oso
+  - action: utter_caracteristicasfisicas_oso
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_oso
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_oso
+  - action: utter_keepREU_1
+  - intent: keepREU_1
+  - action: utter_info_lobo
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_lobo
+  - action: utter_caracteristicasfisicas_lobo
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_lobo
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_lobo
+  - action: utter_keepREU_2
+  - intent: keepREU_2
+  - action: utter_info_lince
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_lince
+  - action: utter_caracteristicasfisicas_lince
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_lince
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_lince
+  - action: utter_keepREU_3
+  - intent: keepREU_3
+  - action: utter_info_buho
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_buho
+  - action: utter_caracteristicasfisicas_buho
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_buho
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_buho
+  - action: utter_keepREU_4
+  - intent: keepREU_4
+  - action: utter_info_aguila
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_aguila
+  - action: utter_caracteristicasfisicas_aguila
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_aguila
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_aguila 
+  - action: utter_keepREU_5
+  - intent: keepREU_5
+  - action: utter_info_muflon
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_muflon
+  - action: utter_caracteristicasfisicas_muflon
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_muflon
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_muflon
+  - action: utter_keepREU_6
+  - intent: keepREU_6
+  - action: utter_info_cabra
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_cabra
+  - action: utter_caracteristicasfisicas_cabra
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_cabra
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_cabra
+  - action: utter_keepREU_7
+  - intent: keepREU_7
+  - action: utter_info_jabali
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_jabali
+  - action: utter_caracteristicasfisicas_jabali
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_jabali
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_jabali
+  - action: utter_keepREU_8
+  - intent: keepREU_8
+  - action: utter_info_gamo
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_gamo
+  - action: utter_caracteristicasfisicas_gamo
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_gamo
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_gamo
+  - action: utter_keepREU_9
+  - intent: keepREU_9
+  - action: utter_info_reno
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_reno
+  - action: utter_caracteristicasfisicas_reno
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_reno
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_reno
+  - action: utter_keepREU_10
+  - intent: keepREU_10
+  - action: utter_info_vison
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_vison
+  - action: utter_caracteristicasfisicas_vison
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_vison
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_vison       
+  - action: utter_fin_RutaEuropa
+  - checkpoint: check_FINRutaEuropa
+
+- story: rutaEUROPA path 2
+  steps:
+  - checkpoint: check_RutaEuropea
+  - action: utter_inicio_rutaEU
+  - action: utter_info_oso
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_oso
+  - action: utter_caracteristicasfisicas_oso
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1  
+  - action: utter_keepREU_1
+  - intent: keepREU_1
+  - action: utter_info_lobo
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_lobo
+  - action: utter_caracteristicasfisicas_lobo
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_lobo
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_lobo
+  - action: utter_keepREU_2
+  - intent: keepREU_2
+  - action: utter_info_lince
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_lince
+  - action: utter_caracteristicasfisicas_lince
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_3
+  - intent: keepREU_3
+  - action: utter_info_buho
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_buho
+  - action: utter_caracteristicasfisicas_buho
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_buho
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_buho
+  - action: utter_keepREU_4
+  - intent: keepREU_4
+  - action: utter_info_aguila
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_aguila
+  - action: utter_caracteristicasfisicas_aguila
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_5
+  - intent: keepREU_5
+  - action: utter_info_muflon
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_muflon
+  - action: utter_caracteristicasfisicas_muflon
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_muflon
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_muflon
+  - action: utter_keepREU_6
+  - intent: keepREU_6
+  - action: utter_info_cabra
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_cabra
+  - action: utter_caracteristicasfisicas_cabra
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_7
+  - intent: keepREU_7
+  - action: utter_info_jabali
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_jabali
+  - action: utter_caracteristicasfisicas_jabali
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_jabali
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_jabali
+  - action: utter_keepREU_8
+  - intent: keepREU_8
+  - action: utter_info_gamo
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_gamo
+  - action: utter_caracteristicasfisicas_gamo
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_9
+  - intent: keepREU_9
+  - action: utter_info_reno
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_reno
+  - action: utter_caracteristicasfisicas_reno
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_reno
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_reno
+  - action: utter_keepREU_10
+  - intent: keepREU_10
+  - action: utter_info_vison
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_vison
+  - action: utter_caracteristicasfisicas_vison
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_vison
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_vison       
+  - action: utter_fin_RutaEuropa
+  - checkpoint: check_FINRutaEuropa
+
+- story: rutaEUROPA path 3
+  steps:
+  - checkpoint: check_RutaEuropea
+  - action: utter_inicio_rutaEU
+  - action: utter_info_oso
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_oso
+  - action: utter_caracteristicasfisicas_oso
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_oso
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_oso
+  - action: utter_keepREU_1
+  - intent: keepREU_1
+  - action: utter_info_lobo
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_lobo
+  - action: utter_caracteristicasfisicas_lobo
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_2
+  - intent: keepREU_2
+  - action: utter_info_lince
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_lince
+  - action: utter_caracteristicasfisicas_lince
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_lince
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_lince
+  - action: utter_keepREU_3
+  - intent: keepREU_3
+  - action: utter_info_buho
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_buho
+  - action: utter_caracteristicasfisicas_buho
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_4
+  - intent: keepREU_4
+  - action: utter_info_aguila
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_aguila
+  - action: utter_caracteristicasfisicas_aguila
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_aguila
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_aguila 
+  - action: utter_keepREU_5
+  - intent: keepREU_5
+  - action: utter_info_muflon
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_muflon
+  - action: utter_caracteristicasfisicas_muflon
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_6
+  - intent: keepREU_6
+  - action: utter_info_cabra
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_cabra
+  - action: utter_caracteristicasfisicas_cabra
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_cabra
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_cabra
+  - action: utter_keepREU_7
+  - intent: keepREU_7
+  - action: utter_info_jabali
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_jabali
+  - action: utter_caracteristicasfisicas_jabali
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_8
+  - intent: keepREU_8
+  - action: utter_info_gamo
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_gamo
+  - action: utter_caracteristicasfisicas_gamo
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_gamo
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_gamo
+  - action: utter_keepREU_9
+  - intent: keepREU_9
+  - action: utter_info_reno
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_reno
+  - action: utter_caracteristicasfisicas_reno
+  - action: utter_masinfo
+  - intent: siguienteanimal_RO_1
+  - action: utter_keepREU_10
+  - intent: keepREU_10
+  - action: utter_info_vison
+  - action: utter_datos
+  - intent: afirmar
+  - action: utter_datos_vison
+  - action: utter_caracteristicasfisicas_vison
+  - action: utter_masinfo
+  - intent: afirmar
+  - action: utter_masinfo_vison
+  - action: utter_curioso
+  - intent: afirmar
+  - action: utter_datocurioso_vison       
+  - action: utter_fin_RutaEuropa
+  - checkpoint: check_FINRutaEuropa
+
+
+####test JUEGO RUTA AUSTRALIANA
+
+- story: JUEGOrutaAUSTRALIA path 1
+  steps:
+  - checkpoint: check_FINRutaOceania
+  - action: utter_INICIOgame_RutaOceania
+  - action: utter_game1_RutaOceania
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_game2_RutaOceania
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game3_RutaOceania
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaOceania
+  - checkpoint: check_FINJuegoOceania
+
+
+- story: JUEGOrutaAUSTRALIA path 2
+  steps:
+  - checkpoint: check_FINRutaOceania 
+  - action: utter_INICIOgame_RutaOceania
+  - action: utter_game1_RutaOceania
+  - intent: game_Respuesta_B
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game2_RutaOceania
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game3_RutaOceania
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaOceania
+  - checkpoint: check_FINJuegoOceania
+
+- story: JUEGOrutaAUSTRALIA path 3
+  steps:
+  - checkpoint: check_FINRutaOceania 
+  - action: utter_INICIOgame_RutaOceania
+  - action: utter_game1_RutaOceania
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game2_RutaOceania
+  - intent: game_Respuesta_B
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_game3_RutaOceania
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaOceania
+  - checkpoint: check_FINJuegoOceania
+
+####testdespedida
+- story: FinConversacion path despedida
+  steps:
+  - checkpoint: check_FINJuegoOceania
+  - intent: despedirse
+  - action: utter_fin
+  - action: utter_despedirse
+
+- story: FinConversacion path despedida
+  steps:
+  - checkpoint: check_FINJuegoAmerica
+  - intent: despedirse
+  - action: utter_fin
+  - action: utter_despedirse  
+
+- story: FinConversacion path despedida
+  steps:
+  - checkpoint: check_FINJuegoEuropa
+  - intent: despedirse
+  - action: utter_fin
+  - action: utter_despedirse  
+
+####test JUEGO RUTA AMERICA
+
+- story: JUEGOrutaAMERICA path 1
+  steps:
+  - checkpoint: check_FINRutaAmericana
+  - action: utter_INICIOgame_RutaAmerica
+  - action: utter_game1_RutaAmerica
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game2_RutaAmerica
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game3_RutaAmerica
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaAmerica
+  - checkpoint: check_FINJuegoAmerica
+
+- story: JUEGOrutaAMERICA path 2
+  steps:
+  - checkpoint: check_FINRutaAmericana
+  - action: utter_INICIOgame_RutaAmerica
+  - action: utter_game1_RutaAmerica
+  - intent: game_Respuesta_B
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_game2_RutaAmerica
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_game3_RutaAmerica
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaAmerica
+  - checkpoint: check_FINJuegoAmerica
+
+- story: JUEGOrutaAMERICA path 3
+  steps:
+  - checkpoint: check_FINRutaAmericana
+  - action: utter_INICIOgame_RutaAmerica
+  - action: utter_game1_RutaAmerica
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game2_RutaAmerica
+  - intent: game_Respuesta_B
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_game3_RutaAmerica
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaAmerica
+  - checkpoint: check_FINJuegoAmerica
+
+
+
+
+####test JUEGO RUTA EUROPA
+
+- story: JUEGOrutaEUROPA path 1
+  steps:
+  - checkpoint: check_FINRutaEuropa
+  - action: utter_INICIOgame_RutaEuropa
+  - action: utter_game1_RutaEuropa
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game2_RutaEuropa
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game3_RutaEuropa
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaEuropa
+  - checkpoint: check_FINJuegoEuropa
+
+- story: JUEGOrutaEUROPA path 2
+  steps:
+  - checkpoint: check_FINRutaEuropa
+  - action: utter_INICIOgame_RutaEuropa
+  - action: utter_game1_RutaEuropa
+  - intent: game_Respuesta_B
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_game2_RutaEuropa
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_game3_RutaEuropa
+  - intent: game_Respuesta_A
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaEuropa
+  - checkpoint: check_FINJuegoEuropa
+
+- story: JUEGOrutaEUROPA path 3
+  steps:
+  - checkpoint: check_FINRutaEuropa
+  - action: utter_INICIOgame_RutaEuropa
+  - action: utter_game1_RutaEuropa
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_game2_RutaEuropa
+  - intent: game_Respuesta_B
+  - action: utter_game_RespuestaCorrecta
+  - action: utter_game3_RutaEuropa
+  - intent: game_Respuesta_C
+  - action: utter_game_RespuestaIncorrecta
+  - action: utter_didyoulikeit
+  - intent: afirmar
+  - action: utter_feliz
+  - action: utter_FINgame_RutaEuropa
+  - checkpoint: check_FINJuegoEuropa

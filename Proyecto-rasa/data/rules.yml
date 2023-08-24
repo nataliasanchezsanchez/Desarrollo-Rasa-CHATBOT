@@ -1,0 +1,29 @@
+version: "2.0"
+
+rules:
+
+#- rule: Decir adios cada vez que el usuario diga adios
+#  steps:
+#  - intent: despedirse
+#  - action: utter_fin
+#  - action: utter_despedirse
+
+
+- rule: Decir 'Soy un bot' cada vez que el usuario challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+#- rule: Cambiar ruta o hilo conversacional si el usuario esta cansado
+#  steps:
+#  - intent: estado_cansado
+#  - action: utter_redirigir
+
+
+
+#- rule: Decir que se va a elegir la ruta segun las preferencias del usuario
+#  steps:
+  #- intent: estacion_fav
+ # - action: utter_choose_rute
+
+

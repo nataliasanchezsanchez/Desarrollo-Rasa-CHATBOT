@@ -1,0 +1,745 @@
+version: "2.0"
+
+intents:
+  - saludar
+  - despedirse
+  - afirmar
+  - negar
+  - estado_feliz
+  - estado_infeliz
+  - bot_challenge
+  - estado_cansado
+  - modo_curiosidad
+  - guia
+  - presentacion
+  - modo_presentacion
+  - edad
+  - animal_fav_koala
+  - animal_fav_mapache
+  - animal_fav_lince
+  - continente_fav
+  - estacion_fav
+  - habitat_fav_desierto
+  - habitat_fav_montaña
+  - habitat_fav_bosque
+  - pais_AUS
+  - pais_FRA
+  - pais_PER
+  - continente_OCE
+  - animal_AUS
+  - from
+  - elige_rutaChuLin
+  - elige_rutaUsuario
+  - elige_rutaOceania
+  - elige_rutaAmericana
+  - elige_rutaAsia 
+  - elige_rutaAfrica
+  - elige_rutaEuropa
+  - keepRO_1
+  - keepRO_2
+  - keepRO_3
+  - game_Respuesta_A
+  - game_Respuesta_B
+  - game_Respuesta_C
+  - siguienteanimal_RO_1
+  - keepRAM_1
+  - keepRAM_2
+  - keepRAM_3
+  - keepRAM_4
+  - keepRAM_5
+  - keepRAM_6
+  - keepRAM_7
+  - keepRAM_8
+  - keepRAM_9
+  - keepREU_1
+  - keepREU_2
+  - keepREU_3
+  - keepREU_4
+  - keepREU_5
+  - keepREU_6
+  - keepREU_7
+  - keepREU_8
+  - keepREU_9
+  - keepREU_10
+
+
+
+responses:
+  utter_saludar:
+  - text: "Hola! Bienvenido al zoologico de Madrid. Que tal estas?"
+  - text: "Buenas, bienvenido al zoo de la comunidad de Madrid, como te encuentras?"
+
+ 
+ 
+  utter_cheer_up:
+  - text: "Tengo algo que te puede animar:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Te he podido ayudar?"
+  
+  utter_feliz:
+  - text: "Genial, sigamos asi!"
+  - text: "Perfecto, vamos a continuar"
+
+  utter_despedirse:
+  - text: "Adios, que pases un buen dia."
+  - text: "Hasta la proxima."
+  - text: "Ha sido un placer, hasta luego."
+ 
+  utter_fin:
+  - text: "Espero haber hecho de tu experiencia en el zoo algo inolvidable. Cuando quiera volver a hablar solo tienes que saludarme.Nos vemos la proxima vez que visites el zoo de Madrid."
+
+  utter_iamabot:
+  - text: "Soy un chatbot, creado por Rasa."
+
+  utter_presentacion:
+  - text: "LLego la hora de las presentaciones, yo soy Chu-Lin y soy el chatbot que estara junto a ti durante tu visita en el zoologico de Madrid. En realidad soy un bot en forma de oso panda, ya que es el simbolo del zoologico."
+
+  utter_explicacion:
+  - text: "Durante el dia de hoy visitaremos los animales del Zoologico de Madrid, charlaremos sobre sus caracteristicas, rarezas y curiosidades, durante la ruta se te propondra si quieres conocer mas datos o si prefieres continuar con el siguiente animal.Yo voy a ser tu guia y compañero, me gustaria saber si prefieres elegir tu mismo la ruta a visitar o quieres que yo elija por ti.Si quieres elegir tu mismo, por favor di en voz alta YO ELIJO, si por el contrario quieres que elija por ti di en voz alta CHULIN ELIGE."
+
+  utter_meet:
+  - text: "Para poder elegir una ruta que concuerde contigo necesito que respondas algunas preguntas, comenzare conociendo tu nombre: Cual es tu nombre?"
+
+  utter_redirigir:
+  - text: "Te apetece hacer otra ruta?"
+
+  utter_habitat_fav:
+  - text: "Cual es tu habitat favorito? Elige entre el bosque, el desierto y la montaña."
+
+  utter_estacion_fav:
+  - text: "Cual es tu estacion favorita? Verano, primavera, otoño o invierno."
+
+  utter_pais_fav:
+  - text: "Que pais te gusta mas? Francia, Peru o Australia, elije entre uno de los paises anteriores y dilo en voz alta."
+
+  utter_animal_fav:
+  - text: "Cual de los siguiente animales prefieres? El koala, el lince o el mapache. Por favor di el el nombre del animal que prefieras, por ejemplo si te gusta mas el koala, di KOALA."
+
+  utter_edad:
+  - text: "Cuantos años tienes?"
+
+  utter_choose_rute:
+  - text: "Genial, a partir de esto voy a elegir una ruta fantastica!"
+
+  utter_choose_rute2:
+  - text: "Okey, vamos a elegir una nueva ruta mas divertida!"
+
+  utter_explain_rutes:
+  - text: "Genial, el zoologico ofrece distintas rutas. Muchos de los animales conviven en hábitat parecidos por eso el zoológico tiene distintos recintos, las rutas que te propongo se dividen por los continentes donde son originarios estos animales, puedes elegir entre las siguientes rutas: Ruta Oceania, Ruta America, Ruta Africa, Ruta Europa y Ruta Asia.Por favor di el nombre de la ruta que quieres elejir, si quieres visitar los animales de la Ruta Oceania, di en voz alta RUTA OCEANIA. "
+  
+  utter_user_choose_rute:
+  - text: "Despues de conocer algunos de tus gustos te propondre una ruta para ti "
+
+  utter_helado:
+  - text: "Te apetece mas un helado?"
+
+  utter_mechulin:
+  - text: "Oh! vaya que coincidencia!! yo soy un oso panda jajaj"
+
+  utter_metoo_koala:
+  - text: "Oh! A mi tambien me gustan mucho los koalas."
+  
+  utter_metoo_lince:
+  - text: "Oh que sorpresa, los linces son de mis animales favoritos."
+  
+  utter_metoo_mapache:
+  - text: "Los mapaches son animales muy especiales, normal que te gusten tanto."
+
+  utter_mayor:
+  - text: "Wow, eres mayor que yo. Solo tengo cinco años"
+
+  utter_notachildanymore:
+  - text: "Mmmm, no eres un poco mayor para estar aqui?"
+
+  utter_curioso5:
+  - text: "¿Te sabes este dato?"
+
+  utter_masinfo:
+  - text: "¿Quieres continuar conociendo mas informacion sobre este animal? Responde Correcto para continuar, si por el contrario quieres conocer al siguiente animal di Siguiente animal."
+
+  utter_curioso:
+  - text: " ¿Quieres que te cuente algo curioso? Responde Si o Correcto para conocer datos curiosos del animal."
+
+  utter_datos:
+  - text: "¿Te gustaria saber mas sobre este animal? Responde con un SI para continuar."
+####SIGUIENTE ANIMAL
+  utter_keepRO_1:
+  - text: "Para mostrar el siguiente animal de la ruta Oceanica por favor di, SIGUIENTE KOALA."
+
+  utter_keepRO_2:
+  - text: "Para mostrar el siguiente animal de la ruta Oceanica por favor di, SIGUIENTE CASUARIO."
+  
+  utter_keepRO_3:
+  - text: "Para mostrar el siguiente animal de la ruta Oceanica por favor di, SIGUIENTE WALLABY."
+  
+  utter_keepRAM_1:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE MONO."
+ 
+  utter_keepRAM_2:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE BISONTE."
+  
+  utter_keepRAM_3:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE NUTRIA."
+
+  utter_keepRAM_4:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE GUANACO."
+
+  utter_keepRAM_5:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE MARA."
+
+  utter_keepRAM_6:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE TAPIR."
+ 
+  utter_keepRAM_7:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE ÑANDU."
+
+  utter_keepRAM_8:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE HORMIGUERO."
+
+  utter_keepRAM_9:
+  - text: "Para mostrar el siguiente animal de la ruta Americana por favor di, SIGUIENTE MAPACHE."
+
+  utter_keepREU_1:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE OSO."
+
+  utter_keepREU_2:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE LOBO."
+
+  utter_keepREU_3:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE LINCE."
+
+  utter_keepREU_4:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE BUHO."
+
+  utter_keepREU_5:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE AGUILA."
+
+  utter_keepREU_6:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE MUFLON."
+
+  utter_keepREU_7:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE CABRA."
+
+  utter_keepREU_8:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE JABALI."
+
+  utter_keepREU_9:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE GAMO."
+ 
+  utter_keepREU_10:
+  - text: "Para mostrar el siguiente animal de la ruta Europea por favor di, SIGUIENTE RENO."
+
+ 
+
+  utter_preguntar_siguienteanimal:
+  - text: "¿Quieres continuar con el siguiente animal de la ruta? , por favor responde Siguiente animal"
+####INICIO RUTAS
+  utter_inicio_rutaAUS:
+  - text: "Comienza la ruta Oceanica, durante esta ruta conoceremos a los siguientes animales: Koalas, Casuarios, Wallabys de roca y Emus"
+ 
+  utter_inicio_rutaAME:
+  - text: "Aqui empieza la ruta America, America constituye el segundo continente mas grande del planeta, como tal alberga gran variedad de animales. Durante la ruta América visitaremos una gran diversidad de animales: el Mono Capuchino, el Bisonte Americano, la Nutria Gigante, las Maras, el Guanaco, el Tapir Amazónico, el Ñandú, el Oso hormiguero, el Mapache y el Flamenco Caribeño."
+ 
+  utter_inicio_rutaEU:
+  - text: "Bienvenido a la Ruta Europa, Europa es un continente donde destacan los sistemas montañosos. Durante esta ruta visitaremos una gran diversidad de animales: el Oso Pardo, el Lobo Gris, el Lince Ibérico, el Búho Real, el Águila Imperial, el Muflón, la Cabra Hispánica, el Jabalí, el Gamo, el Reno y el Visón Europeo. En total 11 animales."
+
+####OCEANIA
+  utter_conoces_pais:
+  - text: "Conoces el pais principal donde viven los animales de la ruta oceanica? Si conoces el nombre por favor, responde el nombre del pais"
+
+  utter_info_koalas:
+  - text: "El primer animal de esta ruta es el koala. Los koalas proviene de Australia, que es un pais rodeado de agua, pues es una isla.Los Koalas son animales de tipo marsupial, es decir las hembras tienen una bolsita en el abdomen donde guardan a las crías."
+
+  utter_masinfo_koalas:
+  - text: "Los koalas se caracterizan por emitir unos gritos (sonido grave). Los machos usan un rugido profundo para indicar su posición física y social (para dar a conocer esos datos a los koalas que se encuentren alrededor), en cambio las hembras no rugen mucho. En el caso de las crías y sus madres estos producen sonidos algo más agudos (parecido a un ronroneo o chasquido suave)." 
+   
+  utter_caracteristicasfisicas_koalas:
+  - text: "Son animales de pelaje espeso y sedoso, semejante a un peluche. Son de color gris y leonado en la parte dorsal, con manchas blancas y blanquecinas en los cuartos traseros y la región central. Con cabeza redonda, orejas velludas y nariz chata (semejante a un osezno) con manos ágiles. Estos animales tienen 4 patas." 
+ 
+  utter_datos_koalas:
+  - text: "Estos animales viven en el este de Australia donde predomina el eucalipto, viven en los árboles. Se alimentan principalmente de hojas de eucalipto. Aunque es un animal que luce tierno y adorable, pueden ser agresivos."
+  
+  utter_datocurioso_koalas:
+  - text: " cuando hace frío se hace bola para protegerse y mantener el calor. Duerme durante el día, se alimenta en la noche (animal nocturno)."
+
+  utter_info_casuario:
+  - text: "El siguiente animal de esta ruta es el causario es un tipo de ave no voladora" 
+  
+  utter_caracteristicasfisicas_casuario:
+  - text: "De plumaje formado por cálamos ásperos, algunos terminan en filamentos que recuerdan a pelos.Con  plumaje negro, cuello principalmente azul y carúncula roja, en la cabeza tiene un casquete córneo muy peculiar, patas con uñas afiladas, plumas duras. Tienen dos patas mas dos alas."
+
+  utter_masinfo_casuario:
+  - text: "Producen sonidos de baja frecuencia, es el animal que emite los sonidos mas graves en el planeta, estos sonidos están justo por encima de la frecuencia mas baja que los humanos pueden escuchar. Se aprecia mas bien como si fuera una vibración." 
+ 
+  utter_datos_casuario:
+  - text: "El casuario vive en el corazón de las selvas tropicales."
+  
+  utter_datocurioso_casuario:
+  - text: " Es un animal peligroso que ataca a saltos usando sus afiladas y duras uñas. Huevos grandes, granulosos y verdes. Es difícil reconocer entre sexos."
+
+  utter_info_wallaby:
+  - text: "A continuacion conoceremos al wallaby, que como los koalas son marsupiales (las hembras tienen una bolsita en el abdomen donde guardan a las crías). "
+  
+  utter_caracteristicasfisicas_wallaby:
+  - text: "Tiene cuatro patas las traseras son muy fuertes (con almohadillas rugosas que evitan resbalones), estas son amarilladas, tonos grisáceos y marrones. El wallaby es un animal pequeño (recuerda a un canguro) con cola anillada, orejas grandes."
+
+  utter_masinfo_wallaby:
+  - text: "El wallaby emite sonidos de tipo silbidos, gruñidos y efectos tipos tos."
+  
+  utter_datos_wallaby:
+  - text: " Suelen vivir en el este de Australia meridional y en algunas poblaciones pequeñas apartadas de Queensland."
+
+  utter_datocurioso_wallaby:
+  - text: "Algunos datos curiosos sobre los wallabies de roca su parecido con el canguro hace que las personas lo confundan con este animal. Los machos crecen más rápido y son más grandes quelas hembras. Si sienten peligro pueden golpear con las patas traseras.."
+
+  utter_info_emu:
+  - text: "El ultimo animal de nuestra ruta es el emu, es un tipo de ave no voladora (ratite)."
+  
+  utter_caracteristicasfisicas_emu:
+  - text: "este animal tiene las patas traseras largas y fuertes, cuello largo, pequeña cabeza y alas y cuerpo robusto. Muy grande. Las patas carecen de plumas. De color gris en plumas, cabeza y patas, la piel del cuello es clarita (casi azulado).Estos animales tienen dos patas y dos alas, Las patas tienen 3 dedos/garras. "
+  
+  utter_masinfo_emu:
+  - text: "El emu produce  gruñidos y silbidos, la hembra emite sonidos que se pueden confundir con los truenos." 
+ 
+  utter_datos_emu:
+  - text: " Es menos abundante a lo largo de la costa este y en el centro de Australia. Evita zonas muy boscosas y desérticas, y se mantiene cerca de sitios con agua estancada." 
+  
+  utter_datocurioso_emu:
+  - text: " Es un ave que no vuela, pero que corre a gran velocidad. En esta especia es el macho quien encuba los huevos y cría a los pichones hasta los seis meses. Los huevos son mucho más pequeños que los de avestruz."
+  
+  utter_fin_RutaOceania:
+  - text: " Ya hemos conocido a los animales de la Ruta Oceania: koalas, casuarios, wallabies y emus."
+ 
+ ####AMERICA
+
+  utter_info_mono:
+  - text: "El primer animal de la ruta es el Mono Capuchino. Este pequeño animal pertenece a la familia de los primates."
+
+  utter_caracteristicasfisicas_mono:
+  - text: "Cuenta con cuatro patas, con pelaje suave y una larga cola. Se le denomina capuchino porque su pelaje oscuro alrededor de la cabeza se asemeja a una capucha. La cola le permite alimentarse, desplazarse y columpiarse entre los árboles. Se apoya en sus 4 patas, pero puede adoptar una postura bípeda."
+
+  utter_datos_mono:
+  - text: "El mono es un animal omnívoro, se alimenta principalmente de frutas, semillas, néctar, insectos, crustáceos, reptiles, huevos de aves y pequeños mamíferos."
+
+  utter_masinfo_mono:
+  - text: "Se adapta a diferentes ecosistemas, aunque principalmente vive en los árboles. Vive en grupos organizados y dirigidos por uno o varios machos."
+
+  utter_datocurioso_mono:
+  - text: "Se les considera los grandes simios del nuevo mundo por su capacidad cognitiva. Son muy habilidosos, ya que pueden usar herramientas como piedras y palos para acceder al alimento."
+
+  utter_info_bisonte:
+  - text: "El siguiente animal de la ruta es el Bisonte Americano. Uno de los animales más reconocidos de América."
+
+  utter_datos_bisonte:
+  - text: "Los bisontes viven en las praderas y en las estepas de América del Norte. Viven en comunidad en grandes manadas, son nómadas, es decir, que va de un lugar a otro."
+
+  utter_caracteristicasfisicas_bisonte:
+  - text: "El bisonte es un mamífero bastante grande con una joroba que tiene entre las paletillas. Tiene un aspecto poderoso, con un tronco macizo, robusto y pelo más largo en la parte posterior. Tiene 4 patas y es de color oscuro."
+
+  utter_masinfo_bisonte:
+  - text: "Es una especie irritable y combativa, lucha furiosamente durante el periodo de celo. Las hembras suelen parir una sola cría tras la gestación. Estos animales producen un gran mugido."
+
+  utter_datocurioso_bisonte:
+  - text: "Antiguamente constituían la principal fuente de alimentación de los indios. En el continente americano llegaron a ser millones de ejemplares, pero con la llegada de los colonos europeos estuvieron a punto de extinguirse, debido a su caza indiscriminada."
+
+  utter_info_nutria:
+  - text: "Continuamos con la Nutria gigante de las amazonas. Es un mamífero carnívoro de América del Sur. Conocida como la nutria más larga del mundo."
+
+  utter_datos_nutria:
+  - text: "Las nutrias son animales ruidosos, tienen un grito agudo y hasta molesto. Estos animales viven en agua dulce, ríos, lagos, pantanos y arroyos de bosques tropicales en el sur de América; sus madrigueras las construyen cerca de la ribera del río y sitios de pesca. "
+
+  utter_caracteristicasfisicas_nutria:
+  - text: "Su cuerpo es alargado con patas cortas y gruesas, grandes píes los cuales tienen membranas y cola ancha y plana. Su piel es de color marrón oscuro, la zona del cuello tiene pelaje clarito. Las nutrias tienen 4 patas."
+
+  utter_masinfo_nutria:
+  - text: "Es un animal sociable, vive en grupos de hasta 10 nutrias formado por una pareja adulta y generaciones de crías. Se alimenta a base de peces, cangrejos, serpientes e incluso caimanes pequeños."
+
+  utter_datocurioso_nutria:
+  - text: "Pueden vivir hasta 15 años. Es un animal curioso y juguetón. En peligro crítico de extinción."
+
+  utter_info_guanaco:
+  - text: "El siguiente animal de la ruta americana es el Guanaco, es una especie de llama salvaje e indomesticable, se puede adaptar en condiciones ambientales y climáticas hostiles."
+
+  utter_datos_guanaco:
+  - text: "Este animal vive en comunidad con unos 20 miembros, dirigidos por un macho. Desde Perú hasta Tierra de Fuego, vive en llanuras y altitudes de hasta 3.000 metros sobre el nivel del mar. "
+
+  utter_caracteristicasfisicas_guanaco:
+  - text: "El guanaco es un animal con pelaje largo, de color marrón rojizo con las partes inferiores blancas y con la cara más oscura, tiene cuatro patas. Produce un relincho de alerta cuando se encuentra en peligro."
+
+  utter_masinfo_guanaco:
+  - text: "Su alimentación se basa en hierbas, musgo y tubérculos, pues es un animal herbívoro. Pariente de dromedarios y camellos. Su depredador es el puma."
+
+  utter_datocurioso_guanaco:
+  - text: "Un dato curioso del Guanaco es que puede llegar a correr a 64 km/h. El macho es muy agresivo en época de celo. Gran habilidad escupiendo."
+
+  utter_info_mara:
+  - text: "El siguiente animal de la ruta americana son las Maras. Un animal de las praderas y estepas de América del Sur."
+
+  utter_datos_mara:
+  - text: "La llaman Liebre de la Patagonia, aunque realidad es un roedor y pertenece a la misma especie que el Conejillo de Indias. Es un animal tímido."
+
+  utter_caracteristicasfisicas_mara:
+  - text: "Este animal posee unas extremidades poderosas: sus patas traseras son largas y finalizan en unas pezuñas que le facilitan el salto y la carrera; las delanteras, por otra parte, presentan garras que les permiten excavar el terreno."
+
+  utter_masinfo_mara:
+  - text: " Vive en madrigueras que se fabrican ellos mismos, allí es donde tienen a las crías. Son animales monógamos, es decir, sólo tienen una pareja. Le gusta tomar el sol y dormir la siesta junto al hogar."
+
+  utter_datocurioso_mara:
+  - text: "Un dato curioso sobre las maras es que sentada sobre sus cuartos traseros, se asemeja a un perro, si bien es capaz de saltar como una liebre."
+
+  utter_info_tapir:
+  - text: "Continuaremos hablando del Tapir amazónico, este animal de los bosques tropicales de América del Sur es un herbívoro grande que llega a pesar 300kg."
+
+  utter_datos_tapir:
+  - text: " El tapir vive en los bosques tropicales y subtropicales, en las zonas cercanas al curso del agua con vegetación interna. Es un animal solitario. Produce unos silbidos como un click."
+
+  utter_caracteristicasfisicas_tapir:
+  - text: " Este animal de pelaje corto tiene una delgada cresta muscular a modo de crin desde la frente a los hombros. Animal robusto, cuello grueso, de aspecto cilíndrico y con pelo corto de color canela que le permite camuflarse."
+
+  utter_masinfo_tapir:
+  - text: "Es pariente lejano del rinoceronte o el caballo. La cresta le ayuda a protegerse de mordiscos de depredadores. Este animal tiene el sentido del oído y olfato muy desarrollado. Animal nocturno."
+
+  utter_datocurioso_tapir:
+  - text: "Un dato curioso sobre el Tapir amazónico es que le gusta mucho nadar y sumergirse en el agua. Es un gran nadador. Sus principales enemigos son el jaguar, la caza y la destrucción de su entorno por parte del ser humano."
+
+  utter_info_ñandu:
+  - text: "El siguiente animal de la ruta americana es el Ñandú. Un ave no voladora que aparentemente se parece a un avestruz."
+
+  utter_datos_ñandu:
+  - text: " Se alimenta de semillas, granos, frutos, reptiles y mamíferos pequeños. El Ñandú es un animal gregario, es decir, que vive en bandadas (una agrupación de aves) de entre 20 y 30 individuos."
+
+  utter_caracteristicasfisicas_ñandu:
+  - text: " Con un plumaje de color marrón grisáceo, sus patas terminan en tres dedos, tiene cuello largo y cabeza pequeña con un pico fuerte. "
+
+  utter_masinfo_ñandu:
+  - text: "El Ñandú corre a gran velocidad si está en peligro. Es torpe para saltar y un gran nadador. Los machos construyen los nidos e incuban los huevos durante 40 días más o menos."
+
+  utter_datocurioso_ñandu:
+  - text: "Un dato curioso de los Ñandús: en la época reproductiva suelen disgregarse, debido a la competencia entre los machos. Machos y hembras practican la poligamia y la poliandria (tiene varias parejas), respectivamente. Por eso los machos cortejan de entre dos a doce hembras."
+
+  utter_info_hormiguero:
+  - text: "El siguiente animal de la ruta es el Oso Hormiguero. Un animal omnívoro que vive en América Central y el Caribe."
+
+  utter_datos_hormiguero:
+  - text: " Su hábitat es la parte central y sureña de América, bosques húmedos y secos, áreas pantanosas, sabanas y pastizales. Es un animal omnívoro que se alimenta a base de insectos, hormigas y termitas."
+
+  utter_caracteristicasfisicas_hormiguero:
+  - text: " El oso hormiguero tiene un pelaje tupido, con cuatro patas, prolongada cabeza, con una pequeña boca y lengua larga. Hocico largo sin dientes, orejas pequeñas y potentes garras."
+
+  utter_masinfo_hormiguero:
+  - text: "Es el primo del armadillo y del perezoso, es un animal extraño con un olfato fino, puede localizar con facilidad a sus presas. Sólo se relacionan entre sí para reproducirse."
+
+  utter_datocurioso_hormiguero:
+  - text: "Un dato curioso del oso hormiguero es que es uno de los mamíferos más viejos del planeta. A pesar de alimentarse de hormigas, solo escogen 4 o 5 tipos de los cientos de especies existentes. Sucede que en cautividad el Oso Hormiguero cohabita con facilidad e incluso se olvida de la búsqueda de alimento, lo cual aumenta la sociabilidad con otros individuos."
+
+  utter_info_mapache:
+  - text: "El siguiente animal es el Mapache, es un animal omnívoro del bosque tropical de América del Norte."
+
+  utter_datos_mapache:
+  - text: "Se alimenta de crustáceos, cangrejos, artrópodos, ranas, peces, nueces, semillas y bayas. Aunque por su carácter carroñero puede llegar a comer otro tipo de cosas. Vive en lugares con árboles, cercanos a zonas con agua o manglares costeros, además se acostumbran a las zonas urbanas."
+
+  utter_caracteristicasfisicas_mapache:
+  - text: " Es un animal pequeño, con 4 patas, una cola larga anillada, con cabeza ancha, hocico puntiagudo. En sus patas hay 5 dedos con garras curvadas. Tiene un “antifaz” como característica en su rostro. Es de color gris tirando a negro, puede llegar a ser rojizo y marrón, con la cola es anillada."
+
+  utter_masinfo_mapache:
+  - text: " El macho es por lo general más grande que la hembra, la hembra tiene cuatro pares de mamas. Los mapaches del norte tienen mayor tamaño que el del sur. Pueden llegar a ser muy agresivos. Las hembras se ocupan del cuidado de las crías. Los mapaches producen un sonido tipo al ronroneo de los gatos."
+
+  utter_datocurioso_mapache:
+  - text: "Una curiosidad sobre los mapaches es que se le considera como el rey de los ladrones de basura. Es un animal urbano, se le puede ver en los basureros de las cuidades. "
+
+  utter_info_flamenco:
+  - text: "El último animal que conoceremos en la Ruta América es el Flamenco Caribeño."
+
+  utter_datos_flamenco:
+  - text: "Este animal vive en grandes colonias de flamencos. En época de nidificación cada pareja de flamencos marca territorio donde forman el nido. Cada pareja solo un huevo."
+
+  utter_caracteristicasfisicas_flamenco:
+  - text: "Al igual que otras especies de flamencos, el Flamenco Caribeño posee un pico con la mandíbula superior rígida y la inferior inmóvil. Tienen el cuello y las patas especialmente largas, incluso más que otras especies de la familia de los flamencos. Su color puede variar desde el rosa pálido hasta un carmesí o bermellón, dependiendo de la zona donde viva y de la cantidad de crustáceos con altos contenidos carotenoides que consuma."
+
+  utter_masinfo_flamenco:
+  - text: "Es el flamenco más grande del continente, y el segundo del mundo, superado por el flamenco común."
+
+  utter_datocurioso_flamenco:
+  - text: "El Flamenco Caribeño vive en zonas tropicales del Nuevo Mundo como las Antillas, la península de Yucatán, el norte de Colombia y Venezuela, las islas Galápagos y el norte de Honduras."
+
+  utter_fin_RutaAmericana:
+  - text: "Ya hemos conocido a los animales de la Ruta Americana: el Mono Capuchino, el Bisonte Americano, la Nutria Gigante, las Maras, el Guanaco, el Tapir Amazónico, el Ñandú, el Oso hormiguero, el Mapache y el Flamenco Caribeño."
+
+####EUROPA
+  utter_info_oso:
+  - text: " El primer animal de la ruta es el Oso Pardo. A este animal de grandes dimensiones se le caracteriza por ser los osos marrones más grandes carnívoros actuales." 
+
+  utter_datos_oso:
+  - text: "El oso es un animal omnívoro, se alimenta principalmente de material vegetal y animal: bulbos, hongos, insectos, mamíferos, peces e incluso carroña. Viven en bosques densos, tundras alpinas y valles fluviales. Hiberna en refugios o cuevas de difícil acceso. " 
+
+  utter_caracteristicasfisicas_oso:
+  - text: "Cuenta con cuatro patas, con pelaje espeso y sedoso. Es un animal muy grande, con cabeza redonda con dos orejas y un morro con nariz poderosa. Tienen unas patas grandes con largas garras. Se apoya en sus cuatro patas para andar la mayoría del tiempo, aunque puede apoyarse solo en las traseras porque tiene gran fuerza."
+
+  utter_masinfo_oso:
+  - text: "Desarrolla los sentidos del olfato y el oído. Los osos tienen el juego como forma de su vida, tanto los osos jóvenes como los adultos."
+
+  utter_datocurioso_oso:
+  - text: "Pese a su aspecto bonachón y plácido, su carácter independiente, nómada y solitario, no es de fiar. Su carácter, variable e imprevisible hace de él un animal peligroso."
+
+  utter_info_lobo:
+  - text: "El siguiente animal de la ruta es el Lobo Gris. Es un mamífero emparentado con el perro doméstico, los chacales, el dingo australiano o el zorro. Aunque se dice que el lobo gris se parece sobre todo al husky siberiano."
+
+  utter_datos_lobo:
+  - text: "El lobo se distribuye por Groenlandia y las islas árticas de Canadá. Vive en Tundras (vegetación propia de los climas fríos que comprende musgos, líquenes y algunos árboles enanos) y regiones polares. Se alimenta de carne principalmente, aunque cazan presas de todo tipo y en ocasiones, frutos." 
+
+  utter_caracteristicasfisicas_lobo:
+  - text: "Cuenta con cuatro patas, con pelaje espeso y sedoso. Es un animal que se apoya en sus 4 patas, su forma es semejante a un perro grande, morro alargado y orejas puntiagudas. Con color tonos grises (desde los grises oscuros, muy cerca del negro, hasta grises claros con tonos amarillentos por el sol)."
+  
+  utter_masinfo_lobo:
+  - text: "La estructura social de la manada está fuertemente jerarquizada y dirigida por una pareja. Se trata del macho y la hembra alfa, quienes suelen ser los únicos que procrean. Son quienes toman las decisiones en torno a las actividades del grupo: la caza, qué individuo come primero, a quién se le permite procrear, etcétera."  
+
+  utter_datocurioso_lobo:
+  - text: "A pesar del trabajo de la sociedad, el lobo gris sigue estando amenazado. La caza, la pérdida del hábitat, los atropellos, los envenenamientos o la falta de presas son las causas de la amenaza. Parientes suyos como el lobo ibérico se enfrentan a problemas similares."
+
+  utter_info_lince:
+  - text: "El próximo animal que visitaremos es el Lince Ibérico, conocido como unos de los animales más significativos de España. Quizás te resulte familiar este mamífero felino también por ser parecido a un gato. "
+
+  utter_datos_lince:
+  - text: "Se alimenta casi 90% de conejos, pero también de ciervos, gamos, perdices, micromamíferos y aves acuáticas. "  
+
+  utter_caracteristicasfisicas_lince:
+  - text: "Es un animal de cuatro patas, de forma esbelta y con unas largas patas. Es de color pardo (como el Oso Pardo que visitamos antes), pero el Lince tiene algunas manchas oscuras esparcidas por su cuerpo. Además, se caracteriza por tener en la cabeza unas barbas largar y en sus orejas, en la parte de las puntas, unas pinceladas de color negro. También tiene una cola muy corta."   
+
+  utter_masinfo_lince:
+  - text: "Los linces emiten gruñidos graves para reclamar su territorio y aullidos cortos para localizar a sus crías. Las hembras crían una vez al año, pero no lo hacen todos los años. Al nacer las crías son patosas y no se les abren los ojos hasta pasar 12 días."  
+
+  utter_datocurioso_lince:
+  - text: "Se relaciona más con un león de pequeño tamaño, a pesar que se parece más a un gato grande."
+
+  utter_info_buho:  
+  - text: "El siguiente animal de la ruta Europa es el Búho Real. Un ave carnívora muy poderosa en la oscuridad."
+
+  utter_datos_buho:  
+  - text: "Se alimenta de aves de mediano tamaño y peces pequeños, aunque la parte más importante de su dieta la componen las liebres. El búho vive en el norte de Europa y América, principalmente en la tundra, un terreno abierto y llano de clima subglacial y subsuelo helado que carece de árboles."
+
+  utter_caracteristicasfisicas_buho:
+  - text: "El búho es un ave grande, con un pico afilado y plumaje que le ayuda a camuflarse. Sus ojos son grandes y le sirven para ver en la oscuridad. Su plumaje es blanquecino, con algunos tonos oscuros."  
+
+  utter_masinfo_buho:
+  - text: "El búho real produce muchos sonidos excepcionales, gritos, maullidos, silbidos y ululatos (un aluato es un grito fuerte que expresa dolor o miedo). Este búho se reproduce al poner directamente, sobre el suelo, un número variable de huevos. La hembra los incuba por un período de cuatro o cinco semanas, hasta que eclosionan."
+
+  utter_datocurioso_buho:  
+  - text: "Es una de las 11 especies de aves que se encuentran en grave peligro de extinción en Finlandia."
+  
+  utter_info_aguila: 
+  - text: "El siguiente animal es el Águila Imperial Ibérica, esta ave rapaz solo habita en la península."
+
+  utter_datos_aguila: 
+  - text: "La base principal de su dieta son los conejos, liebres y gran diversidad de aves, como ánsar común, focha, ánade azulón, paloma torcaz, urraca, y también reptiles, peces e incluso carroña."
+
+  utter_caracteristicasfisicas_aguila:
+  - text: "Es un ave grande, con pico fuerte, patas grandes con garras y alas grandes. Es de color pajizo (amarillento) en el primer y segundo año de vida, su plumaje adulto de un color pardo rojizo, con sus característicos hombros blancos."
+
+  utter_masinfo_aguila:
+  - text: "El Águila Imperial produce un sonido especial (oc-oc-oc). Las parejas de Águila imperial ibérica defienden su coto de caza y reproducción durante todo el año. Esta águila es una rapaz monógama y sedentaria que construye nidos en las copas de los árboles."
+
+  utter_datocurioso_aguila:
+  - text: "El Águila imperial ibérica es una de las siete aves de presa más escasas del planeta, y una de las rapaces que se encuentra en peligro de extinción."
+
+  utter_info_muflon: 
+  - text: "El siguiente animal de la ruta europea es el Muflón. Esta oveja esde tipo artiodáctilo (mamíferos cuyas extremidades terminan en númeropar de dedos), subespecie Caprinae."
+
+  utter_datos_muflon:
+  - text: " Vive en Áreas montañosas con bosques abiertos y pastos amplios con terreno seco y duro.  El muflón se distribuye por gran parte de España. Su alimentación es pura vegetariana."
+
+  utter_caracteristicasfisicas_muflon:
+  - text: "El muflon es una oveja pequeña con cuernos, los cuernos predominan en los machos. Los machos son más grandes que las hembras. Los cuernos tienen curvas. El color del pelo es pardo rojizo con partes blancas en la cara. "    
+
+  utter_masinfo_muflon:
+  - text: "Animal diurno (horario con sol). Los machos tienen comportamientos de combate al unirse a las manadas, chocando los cuernos de forma agresiva. Viven en rebaños por su comportamiento social, normalmente de hembra con crías y algún macho."
+
+  utter_datocurioso_muflon:
+  - text: "Sus grandes depredadores son los lobos, los linces y las águilas."
+
+  utter_info_cabra:
+  - text: "El siguiente animal de la ruta europea es la cabra hispánica. Esta cabra es de tipo capra, un Íbice ibérico. "
+
+  utter_datos_cabra:   
+  - text: "La cabra Hispánica se alimenta de todo tipo de plantas, pero prefieren arbustos. Son animales propios de la península Ibérica, habitan enbosques y en extensiones herbáceas en zonas montañosas. "
+
+  utter_caracteristicasfisicas_cabra:
+  - text: "Animal de cuatro patas, las hembras tienen cuernos pequeños, los machos tienen una cornamenta grande y gruesa, los machos tienen barba. Con manchas oscuras en las patas, tienen el pelaje de color gris, pardo o canela dependiendo de la temporada y de la subespecie."
+
+  utter_masinfo_cabra:
+  - text: "Son característicos de desarrollar combates fuertes con esas grandes cornamentas para conseguir a las hembras en la época de celo. Son sociables y cambian de manada algunas veces. "
+
+  utter_datocurioso_cabra:
+  - text: " Gracias a la desaparición de la cantidad de depredadores, la cabra ha expandido su hábitat hasta llegar a zonas costeras."
+
+  utter_info_jabali:
+  - text: "Continuamos la ruta con el siguiente animal: el jabalí.El Jabalí es el antepasado del cerdo doméstico."
+
+  utter_datos_jabali:
+  - text: "El jabalí come de todo: raíces, tubérculos, invertebrados y pequeños mamíferos. Se distribuye por territorios de abundante vegetación, principalmente en Europa, también podemos encontrar subespecies en América, África y Asia. Muy presente en la Península Ibérica."
+
+  utter_caracteristicasfisicas_jabali:
+  - text: "Su cabeza alargada y de forma cónica tiene unos colmillos grandes y curvos (en el caso de los robustos machos), y un morro afilado con dientes agudos y pequeños (en el caso de las hembras). Tiene cuatro patas con pezuñas."
+
+  utter_masinfo_jabali:
+  - text: "Su poderosa dentadura le convierte en un animal valiente y dispuesto a enfrentarse a cualquiera.  Le gusta proteger su piel de los parásitos con baños de barro, y restregarse después, fuertemente, contra los árboles."
+
+  utter_datocurioso_jabali:    
+  - text: "Se caracteriza por su timidez, sociabilidad e inteligencia. Las crías de jabalí (jabatos) presentan, al nacer, varias líneas longitudinales a cada lado del cuerpo. Por esa razón se les llama rayones."
+
+  utter_info_gamo:
+  - text: "A continuación, seguimos con el animal correspondiente de la ruta, el Gamo. El Gamo es un Cérvido (animales rumiantes como los ciervos y los venados)."
+
+  utter_datos_gamo:
+  - text: "El gamo se alimenta de hojas, hierbas y cortezas de ramas bajas y arbustos. El gamo prefiero los bosques donde hay árboles de hoja caduca. Gracias al ser humano la especie se ha podido volver a distribuir por gran parte del territorio."
+
+  utter_caracteristicasfisicas_gamo:
+  - text: "El gamo es un animal de cuatro patas de la familia del ciervo,tiene grandes astas palmeadas (solo los machos), con cola corta y oscura. Pelopardo-rojizo con motas blancas en primavera y verano. "
+
+  utter_masinfo_gamo:
+  - text: "Especie polígama, cuando se aparean emiten un sonido diferencial llamado ronca. Son los machos quienes marcan el territorio y compiten por el dominio y las hembras. Viven en manadas. Producen un sonido denominado berreo. "
+
+  utter_datocurioso_gamo:    
+  - text: "Los gamos mudas la cornamenta, cuando llega el momento se les cae y les empieza a crecer una nueva."
+
+  utter_info_reno:
+  - text: "El siguiente animal de la ruta europea es el Reno. Es un gran mamífero."
+
+  utter_datos_reno:
+  - text: "Animal norteño, se ha distribuido tradicionalmente en tundras y taigas de América del Norte, Europa, Asia y Groenlandia. El reno se alimenta de hierbas y plantas."
+
+  utter_caracteristicasfisicas_reno:   
+  - text: "El reno es un animal peludo de cuatro patas con pezuñas. Las hembras tienen cornamenta. Sus pezuñas delanteras están completamente adaptadas a la nieve, para poder caminar sobre suelo nevado e incluso buscar alimento."  
+
+  utter_masinfo_reno:
+  - text: "Se reproducen en primavera, después de una gestación de algo más de 200 días. Los terneros son capaces de seguir a sus madres en cuanto nacen. Viven en rebaños, son nómadas y migrantes, como los pueblos con los que conviven (son capaces de recorrer, anualmente, miles de kilómetros en las rutas que les condicen del norte al sur). "
+
+  utter_datocurioso_reno:
+  - text: "En la actualidad, los escasos renos que quedan en estado salvaje son mayoritariamente animales domésticos, imprescindibles para la vida cotidiana de los lapones y otros pueblos nórdicos (como los nénets de Siberia)."
+
+  utter_info_vison:
+  - text: "El último animal de esta ruta es el Visón Europeo, un mustélido (familia de mamíferos carnívoros tanto terrestres como acuáticos)."
+
+  utter_datos_vison:
+  - text: "El visón se alimenta de peces, aves, anfibios, pequeños mamíferos, reptiles y crustáceos. Viven en los cursos de los ríos, arroyos, lagunas, y más zonas acuáticas donde existe vegetación en la ribera y buena calidad de agua."
+
+  utter_caracteristicasfisicas_vison:
+  - text: " El visón es un animal pequeño, alargado, con cola larga, su cara es pequeñita con un morrito con bigotes y dos orejas en la zona superior de la cabeza. Es de color marrón, en la zona de la boca el pelaje es blanco. "
+
+  utter_masinfo_vison:
+  - text: "Animal solitario y muy territorial. El macho se rodea de dos o tres hembras. Las crías nacen ciegas, sin dientes y sin pelo. tiene hábitos nocturnos."
+
+  utter_datocurioso_vison:
+  - text: "El Visón Europeo está en peligro por la introducción del Visón Americano a la zona europea y a la disminución del terreno de los ríos. El zoológico de Madrid colabora en la conservación de esta especie ."
+
+  utter_fin_RutaEuropa:
+  - text: " Ya hemos conocido a los animales de la Ruta Europa:el Oso Pardo, el Lobo Gris, el Lince Ibérico, el Búho Real, el Águila Imperial, el Muflón, la Cabra Hispánica, el Jabalí, el Gamo, el Reno y el Visón Europeo"
+ 
+
+
+
+
+
+
+
+####game
+  utter_INICIOgame_RutaOceania:
+  - text: " Vamos a probar si durante esta ruta has aprendidos de los animales Australianos"
+  
+  utter_INICIOgame_RutaAmerica:
+  - text: "Vamos a comprobar que has atendido durante la ruta americana y si has apredido sobre los animales Americanos."
+
+  utter_INICIOgame_RutaEuropa:
+  - text: "Vamos a comprobar que has atendido durante la ruta europea y si has apredido sobre los animales Europeos."
+
+
+  utter_game1_RutaOceania:
+  - text: " ¿Que dos animales de la Ruta Oceanica tienen una pequeña bolsita en su abdomen para guardar a las crias: Opcion A: Koala y wallaby, Opcion B: emu y casuario, Opcion C: emu y koala.Responde la letra de la opcion que creas correcta."
+  
+  utter_game2_RutaOceania:
+  - text: "Siguiente pregunta ¿Cuáles de los animales de la Ruta Oceanía tienen plumas? Opción A: Koala y Wallaby. Opción B: Casuario y Emú. Opción C: Casuario y Wallaby. Responda la letra que considere correcta. Por ejemplo, si quieres elegir la opción A, di en voz alta LETRA A."
+  
+  utter_game3_RutaOceania:
+  - text: "Una ultima pregunta ¿Qué animal de la Ruta Oceanía es capaz de producir sonidos de baja frecuencia? Opción A: Casuario. Opción B: Emú. Opción C: Wallaby. Responda la letra que considere correcta. Por ejemplo, si quieres elegir la opción A, di en voz alta LETRA A."
+ 
+  utter_game1_RutaAmerica:
+  - text: " ¿Qué animal de la ruta americana tiene un característico 'antifaz' en su rostro? Opción A: Ñandú. Opción B: Mapache. Opción C: Tapir. Responde en voz alta la letra de la opción que creas correcta."
+ 
+  utter_game2_RutaAmerica:
+  - text: "Siguiente pregunta, responde cuáles de los siguientes animales son omnívoros.Opción A: Guanaco Y Tapir. Opción B: Oso Hormiguero y Nutria. Opción C: Mono Capuchino y Oso Hormiguero. Responda la letra que considere correcta. Por ejemplo, si quieres elegir la opción A, di en voz alta LETRA A."
+
+  utter_game3_RutaAmerica:
+  - text: "Una ultima pregunta ¿Qué animal de la ruta hemos aprendido que vive de manera solitaria de los siguientes? Opción A:Tapir. Opción B: Nutria. Opción C: Mono Capuchino. Responda la letra que considere correcta. Por ejemplo, si quieres elegir la opción C, di en voz alta LETRA C."
+
+  utter_game1_RutaEuropa:
+  - text: " Durante la ruta Europa hemos conocido a un animal que muda la cornamenta ¿cual de los siguiente animales es? Opción A: Cabra Hispanica. Opción B: Gamo . Opción C: Reno . Responde en voz alta la letra de la opción que creas correcta."
+ 
+  utter_game2_RutaEuropa:
+  - text: "Siguiente pregunta, responde cuáles de los siguientes animales son aves.Opción A: oso pardo y lince iberico. Opción B: buho y gamo. Opción C: Aguila Imperia y Buho Real. Responda la letra que considere correcta. Por ejemplo, si quieres elegir la opción B, di en voz alta LETRA B."
+
+  utter_game3_RutaEuropa:
+  - text: "Una ultima pregunta ¿Qué animal de la ruta hemos aprendido que sus crias se llaman jabatos de los siguientes? Opción A: Jabali. Opción B: Muflon. Opción C: Lobo Gris. Responda la letra que considere correcta. Por ejemplo, si quieres elegir la opción A, di en voz alta LETRA A."
+
+
+
+
+  utter_game_RespuestaCorrecta:
+  - text: "Muy bien, esa es la respuesta correcta"
+  - text: "Perfecto, has respondido bien la pregunta"  
+  - text: "Eres muy inteligente, has superado el juego" 
+ 
+  utter_game_RespuestaIncorrecta:
+  - text: "Oh vaya , esa no es la respuesta correcta"
+  - text: "Que pena, esa no es la respuesta correcta"  
+
+ 
+  utter_FINgame_RutaOceania:
+  - text: " Aqui termina el juego de la Ruta Oceania, si quieres continuar realizando otra ruta por favor di tu misma la ruta a visitar o si quieres que yo elija por ti. Si quieres elegir tú mismo, por favor di YO ELIJO, si por el contrario quieres que elija por ti di ELIGE CHU-LIN. Si no quieres hacer otra ruta solo despídete con un Adiós"
+  
+  utter_FINgame_RutaAmerica:
+  - text: "Aquí termina el juego de la Ruta América, si quieres continuar realizando otra ruta por favor di tu misma la ruta a visitar o si quieres que yo elija por ti. Si quieres elegir tú mismo, por favor di YO ELIJO, si por el contrario quieres que elija por ti di ELIGE CHU-LIN. Si no quieres hacer otra ruta solo despídete con un Adiós."
+
+  utter_FINgame_RutaEuropa:
+  - text: "Aquí termina el juego de la Ruta Europa, si quieres continuar realizando otra ruta por favor di tu misma la ruta a visitar o si quieres que yo elija por ti. Si quieres elegir tú mismo, por favor di YO ELIJO, si por el contrario quieres que elija por ti di ELIGE CHU-LIN. Si no quieres hacer otra ruta solo despídete con un Adiós."
+
+
+
+  utter_didyoulikeit:
+  - text: "Te ha gustado esta ruta?"
+
+  utter_better_nexttime:
+  - text: "Espero hacerlo mejor la proxima vez..."
+
+  utter_saber_mas:
+  - text: "Despues de todo lo que hemos aprendido sobre los animales, te gustaria saber mas??"
+
+  utter_informacionextra_AUS_ANI:
+  - text: "Aqui van algunos datos curiosos, sobre los koalas, este animal es un símbolo de Australia, muy querido por sus habitantes, un referente. La Australia Koala Foundation es la principal organización no lucrativa y no gubernamental dedicada a la conservación y la gestión eficaz del koala salvaje y su hábitat. El zoológico de Madrid colabora con esta organización. Sobre los wallabies de roca su parecido con el canguro hace que las personas lo confundan con este animal. Los machos crecen más rápido y son más grandes que las hembras. Si sienten peligro pueden golpear con las patas traseras.Esta especie es vulnerable por la destrucción de su hábitat natural, la competencia con otros herbívoros introducidos en su territorio (conejos, ovejas, cabras) y la acción de sus depredadores (zorros y águilas). Antes era cotizada por su piel, ahora es la minería y el pastoreo lo que la perjudica.Sobre los emus a pesar de ser una de las aves más extensas de Australia, en la zona de Tasmania está extinta. Para algunas zonas, se llega a considerar plaga (en relación con el cultivo de cereal). Una de las aves más grandes, le supera el avestruz. Sobre el casuario el casquete le ayuda a romper los obstáculos. El macho incuba los huevos y cuida a sus crías. os huevos de esta ave son grandes, granulosos y verdes. Suelen poner en torno a tres y seis ejemplares."
+
+
+ ####confirmacion ruta
+  utter_confirmRutaOceania:
+  - text: " Por favor, si ha elegido la ruta Oceania responda Correcto"
+  
+  utter_confirmRutaAsia:
+  - text: " Por favor, si ha elegido la ruta Asia responda Correcto"
+ 
+  utter_confirmRutaAmerica:
+  - text: " Por favor, si ha elegido la ruta America responda Correcto"
+  
+  utter_confirmRutaAfrica:
+  - text: " Por favor, si ha elegido la ruta Africa responda Correcto"
+
+  utter_confirmRutaEuropa:
+  - text: " Por favor, si ha elegido la ruta Europa responda Correcto"
+
+    
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
